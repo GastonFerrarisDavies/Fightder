@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="icon" href="fightder.ico">
     <link rel="stylesheet" href="../styles/style.css">
+    
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -12,31 +17,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito&display=swap" rel="stylesheet">
-    <title>Fighter</title> 
+
+    <title>Fightder</title> 
 </head>
 
 <body>
-    <header class="header">
-        <a href="#"><img src="img/fightder.png" class="imagen"></a>
-        <nav class="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="Content.html">Content</a>
-            <a href="rankings.html">Rankings</a>
-            <a href="#" class="active">Respaldo Legal</a>
-            <a href="micuenta.html">Mi Cuenta</a>
-        </nav>
-    </header>
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><img src="../img/fightder.png" class="imagen"></a>
 
-    <main class="main">
-        <section class="sec1">
-            <!-- Faltan las columnas de los rankings (todavía no sé hacerlo) -->
-        </section>
+        <!-- Toggler -->
+        <button 
+            class="navbar-toggler shadow-none border-0" 
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+        <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">This is Fightder!</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="Content.html" class="nav-link">Content</a>
+            </li>
+            <li class="nav-item">
+                <a href="rankings.html" class="nav-link">Rakings</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Respaldo Legal</a>
+            </li>
+            <li class="nav-item">
+                <a href="micuenta.html" class="nav-link">Mi Cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <main class="main-rl">
+          <embed class="pdf "src="../img/Respaldo Legal Fightder.pdf" type="application/pdf">
     </main>
 
     <footer class="footer">
         <h7>TF</h7>
         <p>Copyright &copy;2023; Designed by <span class="designer">Fightder C.O.</span></p>
-        <img src="img/fightder.png" class="imagen">
+        <img src="../img/fightder.png" class="imagen">
     </footer>
     
 </body>

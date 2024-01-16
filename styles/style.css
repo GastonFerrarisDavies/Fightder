@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito&display=swap');
 
 
-
 /* ----Todo---- */
 * {
     padding: 0px;
@@ -12,6 +11,138 @@
 }
 
 /* ----Navbar Open---- */
+@media(max-width:991px) {
+    .sidebar {
+        background-color: #101010;
+    }
+
+    .sec1 {
+        width: 100%;
+    }
+
+    .sec1 h1 {
+        font-size: 5rem;
+    }
+
+    .sec1 h2 {
+        font-size: 3rem;
+    }
+
+    .sec2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sec2 h4 {
+        font-size: 2.7rem;
+        padding: 5rem 0 0 0;
+    }
+
+    .sec2 p {
+        font-size: .9rem;
+    }
+
+    .sec2 img {
+        display: inline-block;
+        position: absolute;
+        width: 70%;
+        top: 135vh;
+        left: 19%;
+    }
+
+    .sec3 {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    .sec3 h5 {
+        position: absolute;
+        color: transparent !important;
+    }
+
+    .sec3-content {
+        padding: 2rem 0;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec3 img {
+        width: 28%;
+    }
+
+    .sec3 h6 {
+        font-size: 1.4rem;
+    }
+
+    .pdf {
+        width: 80%;
+    }
+
+
+
+}
+
+@media(min-width:992px) {
+    .sec1 h1 {
+        font-size: 10rem;
+    }
+
+    .sec2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec2 h4 {
+        font-size: 3.5rem;
+    }
+
+    .sec2 p {
+        font-size: 1.5rem;
+    }
+
+    .sec2 img {
+        size: 60%;
+        padding: 10%;
+    }
+
+    .sec3 {
+        display: block;
+    }
+
+    .sec3 h5{
+        font-size: 80px;
+        padding-top: 9rem;
+    }
+
+    .sec3-content {
+        display: flex;
+        padding: 12rem;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .sec3 div {
+        margin: 4rem;
+        max-width: 25%;
+    }
+
+    .sec3 h6 {
+        font-size: 2rem;
+    }
+
+    .pdf {
+        width: 780px;
+    }
+}
+
 .header {
     width: 100%;
     padding: 1.5rem 5%;
@@ -19,17 +150,16 @@
     display: inline;
 }
 
-.header-content {
-    width: 100%;
-    position: relative;
-    display: inline-flex;
+.navbar {
+    left: 0;
+    position: absolute;
     justify-content: space-between;
-    text-align: space-between;
-    align-items: center;
+    width: 100%;
+    display: flex;
 }
 
-.navbar .navbar-expand-lg .bg-body-tertiary{
-    position: absolute;
+.navbar-brand {
+    margin: 0 0.5rem;
 }
 
 .imagen {
@@ -39,7 +169,7 @@
     max-width: 67px;
 }
 
-.navbar a {
+.nav-item a {
     font-family: 'Nunito', sans-serif;
     right: 1rem;
     font-size: 19px;
@@ -50,9 +180,8 @@
     margin-left: 2rem;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover, .nav-link a.active {
     color: #F5D547;
-    text-shadow: 0.1em 0.1em 0.2em #0202027a;
 }
 /* ----Navbar Close---- */
 
@@ -75,9 +204,7 @@
     text-align: center;
     text-shadow: 0.1em 0.1em 0.2em #0202027a;
     background: url('../img/ring.jpeg') no-repeat;
-    background-size: cover;
-
-    
+    background-size: cover; 
 }
 .pr {
     backdrop-filter: blur(7px) brightness(20%);
@@ -86,12 +213,10 @@ h1 {
     position: relative;
     color: #FFFFFF;
     font-family: 'Anton', sans-serif;
-    font-size: 10rem;
     text-align: center;
     padding: 0;
     margin: 0;
     border: 0;
-    top: -3rem;
 }
 h2 {
     position: relative;
@@ -107,7 +232,6 @@ h2 {
 .socialmedia {
     font-size: 3rem;
     position: relative;
-    top: -3rem;
 }
 
 .socialmedia a {
@@ -120,18 +244,14 @@ h2 {
     font-size: 3.5rem;
     color: #F5D547;
 }
-
 /* ----sec1 Close---- */
 
 
 /* ----sec2 Open---- */
 .sec2 {
-    display: flex;
+    min-height: 100vh;
     background-color: #F9F9F9;
     background-size: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .sec2content {
@@ -141,26 +261,18 @@ h2 {
 .sec2 h4 {
     font-family: 'Anton', sans-serif;
     color: #101010;
-    font-size: 3.5rem;
 }
 .sec2 p {
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     color: #101010;
-    font-size: 1.5rem;
     margin: 0% 10%;
-}
-
-.sec2 img {
-    size: 60%;
-    padding: 10%;
 }
 /* ----sec2 Close---- */
 
 
 /* ----sec3 Open---- */	
 .sec3 {
-    display: block;
     background-color: #111111;
     background-size: 100%;
     justify-content: center;
@@ -170,27 +282,11 @@ h2 {
 
 .sec3 h5 {
     font-family: 'anton', sans-serif;
-    font-size: 80px;
     color: white;
-    padding-top: 9rem;
-    
-}
-
-.sec3-content {
-    display: flex;
-    padding: 12rem;
-    align-items: start;
-    justify-content: center;
-}
-
-.sec3 div {
-    margin: 4rem;
-    max-width: 25%;
 }
 
 .sec3 h6 {
     font-family: 'anton', sans-serif;
-    font-size: 2rem;
     color: #F5D547;
 }
 
@@ -216,6 +312,8 @@ h2 {
 }
 
 .footer p {
+    align-items: center;
+    text-align: center;
     font-family: 'nunito', sans-serif;
     color: #BDC1C6;
 }
@@ -244,11 +342,12 @@ h2 {
 
 /* Mi cuenta */
 .cuenta-content {
+    margin: 5rem 0rem;
     position: absolute;
     display: inline-block;
     top: 50%;
     left: 50%;
-    width: 40%;
+    width: 50%;
     transform: translate(-50%, -50%);
     background: #000000b8;
     border-radius: 1rem;
@@ -287,11 +386,6 @@ form .username {
     font-family: 'nunito', sans-serif;
 }
 
-.username label {
-    position: relative;
-    transform: translate(50%);
-}
-
 form .password {
     position: relative;
     border-bottom: 3px solid #F5D547;
@@ -306,10 +400,6 @@ form .password {
     outline: none;
     color: #F5D547;
     font-family: 'nunito', sans-serif;
-}
-
-.password label {
-    transform: translate(50%);
 }
 
 .button {
@@ -393,5 +483,16 @@ form .password {
     background: #F5D547;
 }
 
+.main-rl {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('../img/ring.jpeg') no-repeat;
+    background-size: cover;
+}
 
-
+.pdf {
+    position: relative;
+    display: flex;
+    padding: 10% 0;
+}
