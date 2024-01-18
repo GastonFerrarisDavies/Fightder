@@ -1,7 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito&display=swap');
 
-
 /* ----Todo---- */
 * {
     padding: 0px;
@@ -45,9 +44,9 @@
     .sec2 img {
         display: inline-block;
         position: absolute;
-        width: 70%;
+        width: 40%;
         top: 135vh;
-        left: 19%;
+        left: 30%;
     }
 
     .sec3 {
@@ -83,9 +82,32 @@
     .pdf {
         width: 80%;
     }
+}
 
+@media (max-width: 800px) {
 
+    .sec1 h1 {
+        font-size: 4rem;
+    }
 
+    .socialmedia a {
+        font-size: 2rem;
+    }
+    .sec2 img {
+        display: inline-block;
+        position: absolute;
+        width: 40%;
+        top: 135vh;
+        left: 30%;
+    }
+
+    .sec3 img {
+        width: 15%;
+    }
+
+    .sec3 p {
+        padding: 0 10%;
+    }
 }
 
 @media(min-width:992px) {
@@ -141,6 +163,21 @@
     .pdf {
         width: 780px;
     }
+
+    .cuenta-content {
+        max-height: 70vh;
+        width: 30% !important;
+    }
+
+
+}
+
+.navbar-nav .nav-item .active {
+    color: #F5D547
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(245, 213, 71)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .header {
@@ -197,8 +234,9 @@
 
 /* ----sec1 Open---- */
 .sec1 {
-    min-height: 100vh;
-    padding: 17rem 9% 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -249,7 +287,7 @@ h2 {
 
 /* ----sec2 Open---- */
 .sec2 {
-    min-height: 100vh;
+    height: 100vh;
     background-color: #F9F9F9;
     background-size: 100%;
 }
