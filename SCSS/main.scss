@@ -1,0 +1,17 @@
+//Base
+@import 'partials/base/reset.scss';
+@import 'partials/base/tipografia.scss';
+
+//Components
+@import 'partials/components/footer.scss';
+@import 'partials/components/index.scss';
+@import 'partials/components/navbar.scss';
+@import 'partials/components/micuenta.scss';
+@import 'partials/components/content.scss';
+@import 'partials/components/rankings.scss';
+@import 'partials/components/respaldo.scss';
+
+//Utilities
+@import 'partials/utilities/maps.scss';
+@import 'partials/utilities/mixins.scss';
+@import 'partials/utilities/variables.scss';

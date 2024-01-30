@@ -1,0 +1,196 @@
+@import '../utilities/mixins';
+@import "../base/reset.css";
+@import "../base/tipografia.css";
+
+.sec1 {
+    height: 100vh;
+    @include flex(column, center, center);
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em #0202027a;
+    background: url('../img/ring.jpeg') no-repeat;
+    background-size: cover;
+
+    .pr {
+        backdrop-filter: blur(7px) brightness(20%);
+    }
+
+    h1 {
+        position: relative; 
+        color: #FFFFFF;
+        font-family: 'Anton', sans-serif;
+        font-size: 6rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    h2 {
+        position: relative;
+        color: #F5D547;
+        font-family: 'Anton', sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .socialmedia {
+        a {
+            margin-left: 1.5rem;
+            transition: .3s;
+            color: white;
+        }
+        a:hover {
+            font-size: 3.5rem;
+            color: #F5D547;
+        }
+
+        font-size: 3rem;
+        position: relative;
+    }
+}
+.sec2 {
+    height: 100vh;
+    .sec2content {
+        text-align: center;
+        display: inline;
+
+        h4 {
+            font-family: 'Anton', sans-serif;
+            color: #101010;
+        }
+
+        p {
+            display: inline-block;
+            font-family: 'Nunito', sans-serif;
+            color: #101010;
+            margin: 0% 10%;
+        }
+    }
+
+}
+
+.sec3 {
+    @include flex (column, center, center);
+    height: 100vh;
+    background-color: #111111;
+    background-size: 100%;
+    text-align: center;
+    padding: 1rem 0;
+
+    h5 {
+        font-family: 'anton', sans-serif;
+        color: white;
+    }
+
+    .sec3-content {
+        max-width: 80%;
+
+        .div3 {
+            padding: 1rem;
+
+            h6 {
+                font-family: 'anton', sans-serif;
+                color: #F5D547;
+            }
+            
+            p {
+                font-family: 'nunito', sans-serif;
+                color: white;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .sec2 {
+        @include flex(column, start, center);
+
+        img {
+            position: absolute;
+            transform: translateY(30vh);
+            max-width: 40%;
+        }
+        .sec2content {
+            margin-top: 5rem;
+            p {
+                display: inline-block;
+                font-family: 'Nunito', sans-serif;
+                color: #101010;
+                margin: 0% 10%;
+            }
+        }
+    
+    }
+
+    .sec3 {
+
+        h5 {
+            font-size: 1.5rem;
+            padding: .2rem;
+        }
+
+        img {
+            max-width: 20%;
+        }
+        .sec3-content{
+            .div3 {
+
+                h6 {
+                    font-size: 1.2rem;
+                }
+                
+                p {
+                    margin: .7rem;
+                    font-size: .9rem;
+                }
+            }
+        }
+
+
+        
+    }
+
+
+}
+
+@media(min-width: 992px){
+
+    .sec2 {
+        @include flex(row, center, center);
+
+        img {
+            padding: 0 0 0 3rem;
+        }
+        }
+    
+    .sec3 {
+    
+        h5 {
+            font-size: 3rem;
+            padding: .2rem;
+        }
+        
+        .sec3-content{
+            @include flex(row, space-between, start);
+            padding: 1rem 0;
+            .div3 {
+                max-width: 30%;
+                img {
+                    width: 120px;
+                }
+
+                h6 {
+                    font-size: 2rem;
+                }
+                
+                p {
+                    margin: .7rem;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}

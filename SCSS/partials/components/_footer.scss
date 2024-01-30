@@ -1,0 +1,30 @@
+@import "../utilities/_mixins";
+@import"../utilities/maps.scss";
+@import "../base/reset.css";
+
+.footer {
+    background-color: #F9F9F9;
+    width: 100%;
+    @include flex (row, space-between, center);
+    p {
+        align-items: center;
+        text-align: center;
+        font-family: 'nunito', sans-serif;
+        color: #BDC1C6;
+        margin: 0;
+        padding: 0;
+    }
+
+    h7 {
+        color: #BDC1C6;
+        font-size: 1.2rem;
+        font-family: 'anton', sans-serif;
+        padding: 0.5rem;
+    }
+
+    img {
+        max-width: 55px;
+        filter: grayscale(100%);
+        padding: 0.5rem;
+    }
+}

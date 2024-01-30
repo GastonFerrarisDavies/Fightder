@@ -1,0 +1,80 @@
+@import "../utilities/mixins.css";
+@import "../base/reset.css";
+@import "../base/tipografia.css";
+@import "../utilities/maps";
+
+.grid-container {
+    @include flex(row, center, center);
+    max-width: 70%;
+
+    .grid {
+        display: grid;
+        align-items: center;
+        align-items: center;
+        padding: 0% 3%;
+
+        .champ {
+            margin: 10% 0%;
+            padding: 10% 10%;
+            background-color: white;
+
+            img {
+                width: 60%;
+                border-bottom: 3px solid #F5D547;
+                z-index: 1;
+            }
+        }
+        .champgrid {
+            display: grid;
+            background-color: white;
+            border-bottom: 4px solid #F5D547;
+
+            a {
+                text-decoration: none;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                font-family: 'anton', sans-serif;
+                border-bottom: 1px solid #F5D547;
+                text-shadow: none;
+                padding: 9% 0%;
+                transition: .3s;
+            }
+            a:hover {
+                background: #F5D547;
+            }
+        }
+    }
+}
+
+@media (max-width: 929px) {
+    .grid-container {
+        .grid {
+            .champgrid {
+                a {
+                    font-size: .5rem;
+                }
+                a:hover {
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 930px) {
+    .grid-container {
+        .grid {
+            .champgrid {
+                a {
+                    font-size: 1rem;
+                }
+                a:hover {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

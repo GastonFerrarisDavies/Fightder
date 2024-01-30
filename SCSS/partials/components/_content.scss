@@ -1,0 +1,138 @@
+@import "../utilities/mixins.css";
+@import "../base/reset.css";
+@import "../base/tipografia.css";
+@import "../utilities/variables.scss";
+
+.content1 {
+    @include flex(row, center, center);
+    background: #000000b8;
+    border-radius: 3rem;
+    margin: 5rem 0rem 0 0;
+    padding: 0;
+
+    video {
+        padding: 1rem;
+    }
+}
+
+
+
+.content2 {
+    z-index: 10;
+    background: #000000b8;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+
+    .row {
+        .col {
+            padding: 3rem;
+            margin: .3rem;
+            border-radius: 1rem;
+            .torneo {
+                font-size: 1rem;
+                text-align: center;
+                font-family: $font1;
+                text-decoration: none;
+                cursor: pointer;
+                transition: .3s;
+            }
+            .torneo:hover {
+                font-size: 1.1rem;
+            }
+        }
+        .t1 {
+            background: url(../../../img/1.png);
+            background-size: cover;
+            .torneo {
+                color: rgb(162, 71, 18);
+                @include shadowsita(black);
+            }
+        }
+
+        .t2 {
+            background: url(../../../img/2.png);
+            background-size: cover;
+            .torneo {
+                color: rgb(18, 150, 162);
+                @include shadowsita(black);
+            }
+        }
+
+        .t3 {
+            background: url(../../../img/3.png);
+            background-size: cover;
+            .torneo {
+                color: rgb(78, 18, 162);
+                @include shadowsita(black);
+            }
+        }
+
+        .t4 {
+            background: url(../../../img/4.png);
+            background-size: cover;
+            .torneo {   
+                color: rgb(23, 162, 18);
+                @include shadowsita(black);
+            }
+        }
+
+        .t5 {
+            background: url(../../../img/5.png);
+            background-size: cover;
+            .torneo {
+                color: rgb(54, 54, 54);
+                @include shadowsita(black);
+            }
+        }
+
+        .t6 {
+            background: url(../../../img/6.png);
+            background-size: cover;
+            .torneo {
+                color: rgb(50, 42, 93);
+                @include shadowsita(black);
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .content1 {
+        width: 80%;
+
+        video {
+            width: 600px;
+        }
+ 
+        img {
+            position: absolute;
+            filter:opacity(0%);
+            z-index: 0;
+        }
+    }
+
+    .content2 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .content1 {
+        max-width: 60%;
+
+        video {
+            width: 700px;
+        }
+
+        img {
+            margin: 0rem 0rem 0rem 1rem;
+            padding: 0;
+            max-width: 20%;
+        }
+    }
+
+    .content2 {
+        max-width: 60%;
+    }
+}
+
