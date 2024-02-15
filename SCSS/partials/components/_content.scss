@@ -101,12 +101,12 @@
         width: 80%;
 
         video {
+            max-width: 70%;
             width: 600px;
         }
  
         img {
-            position: absolute;
-            filter:opacity(0%);
+            display: none;
             z-index: 0;
         }
     }
@@ -121,6 +121,7 @@
         max-width: 60%;
 
         video {
+            max-width: 50%;
             width: 700px;
         }
 

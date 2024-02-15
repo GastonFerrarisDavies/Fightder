@@ -254,7 +254,7 @@
 
 @media (max-width: 991px) {
   .sidebar {
-    background-color: #101010;
+    background-color: rgb(16, 16, 16);
     backdrop-filter: blur(10px);
   }
   .nav-item a {
@@ -462,11 +462,11 @@
     width: 80%;
   }
   .content1 video {
+    max-width: 70%;
     width: 600px;
   }
   .content1 img {
-    position: absolute;
-    filter: opacity(0%);
+    display: none;
     z-index: 0;
   }
   .content2 {
@@ -478,6 +478,7 @@
     max-width: 60%;
   }
   .content1 video {
+    max-width: 50%;
     width: 700px;
   }
   .content1 img {
