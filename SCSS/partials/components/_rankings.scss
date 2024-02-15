@@ -5,7 +5,6 @@
 
 .grid-container {
     @include flex(row, center, center);
-    max-width: 70%;
 
     .grid {
         display: grid;
@@ -51,6 +50,7 @@
 
 @media (max-width: 929px) {
     .grid-container {
+        max-width: 90%;
         .grid {
             .champgrid {
                 a {
@@ -66,6 +66,7 @@
 
 @media (min-width: 930px) {
     .grid-container {
+        max-width: 70%;
         .grid {
             .champgrid {
                 a {

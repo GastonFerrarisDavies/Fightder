@@ -393,8 +393,6 @@
   padding: 1rem;
 }
 .content2 .row .col {
-  padding: 3rem;
-  margin: 0.3rem;
   border-radius: 1rem;
 }
 .content2 .row .col .torneo {
@@ -472,6 +470,10 @@
   .content2 {
     width: 80%;
   }
+  .content2 .row .col {
+    padding: 2rem;
+    margin: 0.2rem;
+  }
 }
 @media (min-width: 992px) {
   .content1 {
@@ -489,13 +491,16 @@
   .content2 {
     max-width: 60%;
   }
+  .content2 .row .col {
+    padding: 3rem;
+    margin: 0.3rem;
+  }
 }
 .grid-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 70%;
 }
 .grid-container .grid {
   display: grid;
@@ -536,6 +541,9 @@
 }
 
 @media (max-width: 929px) {
+  .grid-container {
+    max-width: 90%;
+  }
   .grid-container .grid .champgrid a {
     font-size: 0.5rem;
   }
@@ -544,6 +552,9 @@
   }
 }
 @media (min-width: 930px) {
+  .grid-container {
+    max-width: 70%;
+  }
   .grid-container .grid .champgrid a {
     font-size: 1rem;
   }
